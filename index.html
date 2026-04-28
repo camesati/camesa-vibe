@@ -1,20 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Camesa — Vibe Coding</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; text-align: center; padding: 60px 20px; }
-    h1 { color: #3ecf8e; font-size: 2.5rem; margin-bottom: 20px; }
-    p { font-size: 1.2rem; color: #94a3b8; }
-    .badge { background: #d97757; color: #fff; padding: 8px 20px; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔄 FLUXO VISUAL — Stack Vibe Coding · Copiar e Colar · 19:12</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0e1a;color:#e2e8f0;line-height:1.6;font-size:16px}
+  .container{max-width:900px;margin:0 auto;padding:16px}
+  header{background:linear-gradient(90deg,#6b5b95,#4a3f6b);padding:16px;text-align:center;position:sticky;top:0;z-index:100}
+  header h1{font-size:1.4rem;font-weight:800;color:#fff}
+  .timer-big{text-align:center;font-size:1.5rem;font-weight:800;color:#fbbf24;margin:10px 0}
+  .instrucao{background:#1e293b;border-left:4px solid #fbbf24;padding:14px;margin:14px 0;border-radius:0 10px 10px 0}
+  .instrucao strong{color:#fbbf24}
+  .code-box{background:#1a1a2e;border:2px solid #475569;border-radius:12px;padding:16px;margin:14px 0;font-family:'Consolas',monospace;font-size:.85rem;color:#e2e8f0;position:relative;max-height:500px;overflow:auto}
+  .code-box .label{position:absolute;top:-12px;left:16px;background:#6b5b95;color:#fff;padding:2px 12px;border-radius:6px;font-size:.8rem;font-weight:800;font-family:sans-serif}
+  .copy-btn{position:absolute;top:10px;right:10px;background:#334155;color:#fff;border:none;padding:6px 14px;border-radius:6px;font-size:.8rem;cursor:pointer;font-family:sans-serif;font-weight:600}
+  .copy-btn:hover{background:#475569}
+  .ok{background:#065f46;color:#6ee7b7;padding:12px 16px;border-radius:10px;font-weight:700;margin:12px 0}
+  .fala{background:#1a2332;border-left:4px solid #3ecf8e;padding:12px 16px;margin:12px 0;border-radius:0 10px 10px 0;font-style:italic;color:#94a3b8}
+  .fala strong{color:#6ee7b7;font-style:normal}
+  .botoes{display:flex;gap:10px;justify-content:center;margin:14px 0}
+  button{background:#334155;color:#fff;border:none;padding:10px 20px;border-radius:10px;font-weight:700;cursor:pointer;font-size:.9rem}
+  button:hover{background:#475569}
+  footer{text-align:center;padding:16px;color:#64748b;font-size:.85rem;border-top:1px solid #1e293b;margin-top:16px}
+</style>
+<base target="_blank">
 </head>
 <body>
-  <h1>🚀 Projeto Camesa</h1>
-  <p>Primeiro deploy com Vibe Coding</p>
-  <p>Stack: VS Code + GitHub + Vercel + Supabase + Claude Code</p>
-  <div class="badge">Em construção 🚧</div>
+
+<header>
+  <h1>🔄 FLUXO VISUAL — Stack Vibe Coding</h1>
+</header>
+
+<div class="container">
+
+<div class="timer-big" id="clock">--:--:--</div>
+
+<div class="instrucao">
+  <strong>📍 INSTRUÇÕES:</strong><br>
+  1. No VS Code, abra o <strong>index.html</strong> que criamos<br>
+  2. APAGUE tudo o que tem lá<br>
+  3. Cole o código abaixo<br>
+  4. Salve (Ctrl+S)<br>
+  5. git add . → git commit -m "feat: adiciona fluxo visual da stack" → git push<br>
+  6. Recarregue o site na Vercel e mostre para a turma
+</div>
+
+<div class="fala"><strong>Fale:</strong> "Vamos transformar nossa página em um dashboard visual. Cada ferramenta da nossa stack vai aparecer como um card, com setas mostrando como elas conversam. Isso é o que vocês vão mostrar para o chefe quando ele perguntar 'o que vocês aprenderam?'"
+</div>
+
+<div class="code-box" id="code-fluxo">
+  <div class="label">COLE AQUI (substitua TODO o index.html)</div>
+  <button class="copy-btn" onclick="copyCode()">📋 Copiar</button>
+  <div><span style="color:#64748b"><!DOCTYPE html></span></div>
+  <div><span style="color:#c084fc"><html</span> <span style="color:#60a5fa">lang</span>=<span style="color:#fbbf24">"pt-BR"</span><span style="color:#c084fc">></span></div>
+  <div><span style="color:#c084fc"><head></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><meta</span> <span style="color:#60a5fa">charset</span>=<span style="color:#fbbf24">"UTF-8"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><meta</span> <span style="color:#60a5fa">name</span>=<span style="color:#fbbf24">"viewport"</span> <span style="color:#60a5fa">content</span>=<span style="color:#fbbf24">"width=device-width, initial-scale=1.0"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><title></span>Fluxo Vibe Coding — Camesa<span style="color:#c084fc"></title></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><style></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">* { margin: 0; padding: 0; box-sizing: border-box; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">body {</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">font-family: 'Segoe UI', system-ui, sans-serif;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 100%);</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">color: #e2e8f0; min-height: 100vh; padding: 40px 20px;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">display: flex; flex-direction: column; align-items: center;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">}</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">h1 { color: #fbbf24; font-size: 2.2rem; margin-bottom: 10px; text-align: center; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.subtitle { color: #94a3b8; margin-bottom: 40px; font-size: 1.1rem; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.flow { display: flex; flex-direction: column; gap: 0; width: 100%; max-width: 600px; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card {</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">padding: 24px; border-radius: 16px; border-left: 5px solid;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">background: rgba(255,255,255,0.05); backdrop-filter: blur(10px);</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">display: flex; align-items: center; gap: 16px; position: relative;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">animation: fadeIn 0.6s ease forwards; opacity: 0;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">}</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card:nth-child(1) { animation-delay: 0.1s; border-color: #007acc; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card:nth-child(3) { animation-delay: 0.2s; border-color: #d97757; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card:nth-child(5) { animation-delay: 0.3s; border-color: #24292e; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card:nth-child(7) { animation-delay: 0.4s; border-color: #000; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card:nth-child(9) { animation-delay: 0.5s; border-color: #3ecf8e; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.card:nth-child(11) { animation-delay: 0.6s; border-color: #f39c12; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.icon { width: 48px; height: 48px; border-radius: 12px; display: flex;</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.vscode { background: #007acc20; color: #007acc; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.claude { background: #d9775720; color: #d97757; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.github { background: #24292e20; color: #e2e8f0; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.vercel { background: #00000020; color: #fff; border: 1px solid #333; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.supabase { background: #3ecf8e20; color: #3ecf8e; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.user { background: #f39c1220; color: #f39c12; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.info h3 { font-size: 1.1rem; margin-bottom: 4px; color: #fff; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.info p { font-size: 0.9rem; color: #94a3b8; line-height: 1.4; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">.arrow { display: flex; justify-content: center; padding: 8px 0; color: #64748b; font-size: 1.2rem; }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } from { opacity: 0; transform: translateY(20px); } }</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#94a3b8">footer { margin-top: 40px; color: #64748b; font-size: 0.85rem; text-align: center; }</span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"></style></span></div>
+  <div><span style="color:#c084fc"></head></span></div>
+  <div><span style="color:#c084fc"><body></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><h1></span>🔄 Fluxo Vibe Coding<span style="color:#c084fc"></h1></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><p</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"subtitle"</span><span style="color:#c084fc">></span>Como as ferramentas conversam entre si<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"flow"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"card"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"icon vscode"</span><span style="color:#c084fc">></span>💻<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"info"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><h3></span>VS Code<span style="color:#c084fc"></h3></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>Você edita o código aqui. IDE central com terminal integrado, extensões e debug.<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"arrow"</span><span style="color:#c084fc">></span>⬇️ Claude lê e sugere<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"card"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"icon claude"</span><span style="color:#c084fc">></span>🤖<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"info"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><h3></span>Claude Code<span style="color:#c084fc"></h3></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>Agente de IA que vive no terminal. Lê seu projeto, escreve código, executa comandos e commita.<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"arrow"</span><span style="color:#c084fc">></span>⬇️ Commit e push<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"card"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"icon github"</span><span style="color:#c084fc">></span>🐙<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"info"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><h3></span>GitHub<span style="color:#c084fc"></h3></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>Cofre do código. Versionamento, branches, pull requests e colaboradores.<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"arrow"</span><span style="color:#c084fc">></span>⬇️ Deploy automático<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"card"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"icon vercel"</span><span style="color:#c084fc">></span>▲<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"info"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><h3></span>Vercel<span style="color:#c084fc"></h3></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>Fábrica de publicação. Cada push vira um site atualizado. Preview por branch.<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"arrow"</span><span style="color:#c084fc">></span>⬇️ Dados e autenticação<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"card"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"icon supabase"</span><span style="color:#c084fc">></span>🟢<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"info"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><h3></span>Supabase<span style="color:#c084fc"></h3></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>Cérebro do projeto. PostgreSQL, autenticação, storage e segurança (RLS).<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"arrow"</span><span style="color:#c084fc">></span>⬇️ Produto final<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"card"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"icon user"</span><span style="color:#c084fc">></span>👤<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><div</span> <span style="color:#60a5fa">class</span>=<span style="color:#fbbf24">"info"</span><span style="color:#c084fc">></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><h3></span>Usuário Final<span style="color:#c084fc"></h3></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>Usa o produto. Não sabe (nem precisa saber) de toda a stack por trás.<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"></div></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"><footer></span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c084fc"><p></span>RNB Soluções × Grupo Camesa · Treinamento Vibe Coding<span style="color:#c084fc"></p></span></div>
+  <div>&nbsp;&nbsp;<span style="color:#c084fc"></footer></span></div>
+  <div><span style="color:#c084fc"></body></span></div>
+  <div><span style="color:#c084fc"></html></span></div>
+</div>
+
+<div class="ok">✓ CHECK: Depois do push, recarregue o site na Vercel. Deve aparecer um fluxo visual animado com 6 cards em sequência.</div>
+
+<div class="fala" style="background:#2d2415;border-color:#fbbf24">
+  <strong>Fale:</strong> "Agora nosso site não é mais uma página em branco. É um dashboard que explica o que a gente aprendeu hoje. Isso é o que vocês vão mostrar quando o chefe perguntar."
+</div>
+
+<div class="botoes">
+  <button onclick="window.print()">🖨️ Imprimir</button>
+</div>
+
+<footer>
+  <p><strong>RNB Soluções</strong> × Grupo Camesa · Fluxo Visual · 19:12</p>
+</footer>
+
+<script>
+function copyCode(){
+  const text = document.querySelector('.code-box').innerText.replace('📋 Copiar','').trim();
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = '✅ Copiado!';
+    setTimeout(()=>btn.textContent='📋 Copiar',2000);
+  });
+}
+function clock(){
+  const now = new Date();
+  document.getElementById('clock').textContent = String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+':'+String(now.getSeconds()).padStart(2,'0');
+}
+setInterval(clock,1000); clock();
+</script>
+
 </body>
 </html>
